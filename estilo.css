@@ -1,6 +1,9 @@
 body{
    background-color: rgba(0, 0, 0, 0.916);
    color: azure;
+   display:flex;
+   justify-content:center;
+   align-items:center
 }
 
 .img01{
