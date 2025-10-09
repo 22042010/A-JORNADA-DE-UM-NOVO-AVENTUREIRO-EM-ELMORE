@@ -10,3 +10,9 @@ body{
 
 width:65%;
 }
+.passo{
+   display: none;
+}
+.passo.ativo{
+   display: block;
+}
