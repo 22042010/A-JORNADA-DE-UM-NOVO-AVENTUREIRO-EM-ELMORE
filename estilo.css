@@ -1,18 +1,21 @@
-body{
-   background-color: rgba(0, 0, 0, 0.916);
-   color: azure;
-   display:flex;
-   justify-content:center;
-   align-items:center;
+body {
+    background-color: rgba(0, 0, 0, 0.916);
+    color: azure;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Garante que o body ocupe toda a altura da tela */
+    margin: 0; /* Remove margens padrão do navegador */
 }
 
-.img01{
+.img01 {
+    width: 65%;
+}
 
-width:65%;
+.passo {
+    display: none;
 }
-.passo{
-   display: none;
-}
-.passo.ativo{
-   display: block;
+
+.passo.ativo {
+    display: block;
 }
