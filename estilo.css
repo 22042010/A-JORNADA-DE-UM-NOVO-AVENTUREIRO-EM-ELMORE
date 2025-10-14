@@ -1,21 +1,34 @@
-body {
-    background-color: rgba(0, 0, 0, 0.916);
-    color: azure;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Garante que o body ocupe toda a altura da tela */
-    margin: 0; /* Remove margens padrão do navegador */
+/* Estilo geral do botão */
+button {
+    background: linear-gradient(to right, #000000, #008000); /* Degradê de preto para verde */
+    color: white; /* Texto branco */
+    border: none; /* Remove borda padrão */
+    padding: 15px 30px; /* Espaçamento interno */
+    font-size: 16px; /* Tamanho da fonte */
+    font-weight: bold; /* Fonte em negrito */
+    text-transform: uppercase; /* Letras maiúsculas */
+    border-radius: 8px; /* Bordas arredondadas */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    transition: all 0.3s ease-in-out; /* Transição suave para efeitos de hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra suave para dar profundidade */
 }
 
-.img01 {
-    width: 65%;
+/* Efeito de hover no botão */
+button:hover {
+    background: linear-gradient(to right, #006400, #00ff00); /* Degradê mais claro no hover */
+    transform: scale(1.05); /* Aumenta levemente o tamanho */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Aumenta a sombra no hover */
 }
 
-.passo {
-    display: none;
+/* Efeito de foco no botão (quando o botão está ativo ou focado) */
+button:focus {
+    outline: none; /* Remove a borda de foco padrão */
+    box-shadow: 0 0 10px 2px rgba(0, 255, 0, 0.7); /* Borda verde neon ao focar */
 }
 
-.passo.ativo {
-    display: block;
+/* Adicionando o efeito de desativado (opcional) */
+button:disabled {
+    background: #444; /* Cor mais escura */
+    cursor: not-allowed; /* Cursor em forma de proibido */
+    box-shadow: none; /* Remove a sombra */
 }
