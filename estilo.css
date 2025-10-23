@@ -1,41 +1,41 @@
-/* Estilo do fundo da página */
+
 body {
-    background: linear-gradient(to bottom, #008000, #000000); /* Degradê de verde para preto */
-    margin: 0; /* Remove margens padrão */
-    height: 100vh; /* Faz o fundo ocupar toda a altura da tela */
+    background: linear-gradient(to bottom, #008000, #000000); 
+    margin: 0; 
+    height: 100vh; 
 }
 
-/* Estilo geral do botão */
+
 button {
-    background: linear-gradient(to right, #000000, #008000); /* Degradê de preto para verde */
-    color: white; /* Texto branco */
-    border: none; /* Remove borda padrão */
-    padding: 15px 30px; /* Espaçamento interno */
-    font-size: 16px; /* Tamanho da fonte */
-    font-weight: bold; /* Fonte em negrito */
-    text-transform: uppercase; /* Letras maiúsculas */
-    border-radius: 8px; /* Bordas arredondadas */
-    cursor: pointer; /* Muda o cursor para indicar que é clicável */
-    transition: all 0.3s ease-in-out; /* Transição suave para efeitos de hover */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra suave para dar profundidade */
+    background: linear-gradient(to right, #000000, #008000);
+    color: white;
+    border: none; 
+    padding: 15px 30px; 
+    font-size: 16px; 
+    font-weight: bold; 
+    text-transform: uppercase; 
+    border-radius: 
+    cursor: pointer; 
+    transition: all 0.3s ease-in-out; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
 }
 
-/* Efeito de hover no botão */
+
 button:hover {
-    background: linear-gradient(to right, #006400, #00ff00); /* Degradê mais claro no hover */
-    transform: scale(1.05); /* Aumenta levemente o tamanho */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Aumenta a sombra no hover */
+    background: linear-gradient(to right, #006400, #00ff00); 
+    transform: scale(1.05); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); 
 }
 
-/* Efeito de foco no botão (quando o botão está ativo ou focado) */
+
 button:focus {
-    outline: none; /* Remove a borda de foco padrão */
-    box-shadow: 0 0 10px 2px rgba(0, 255, 0, 0.7); /* Borda verde neon ao focar */
+    outline: none; 
+    box-shadow: 0 0 10px 2px rgba(0, 255, 0, 0.7); 
 }
 
-/* Efeito de desativado (opcional) */
+
 button:disabled {
-    background: #444; /* Cor mais escura */
-    cursor: not-allowed; /* Cursor em forma de proibido */
-    box-shadow: none; /* Remove a sombra */
+    background: #444; 
+    cursor: not-allowed; 
+    box-shadow: none; 
 }
