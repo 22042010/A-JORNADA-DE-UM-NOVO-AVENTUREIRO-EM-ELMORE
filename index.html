@@ -10,24 +10,24 @@
 
 <body>
     <main>
-        <div class="passo ativo" id="passo-0">
-            <img class="img01" src="./julia burra da porra.webp" alt="Imagem de Julia">
-            <p>Você acaba de se mudar para Elmore e
-                recebe um convite inesperado para se juntar ao estranho e caótico mundo da família Watterson!
-            </p>
-            <button class="btn-proximo" data-proximo="1">Rota do Parque</button>
-            <button class="btn-proximo" data-proximo="2">Rota da Escola</button>
-        </div>
 
-        <div class="passo" id="passo-1">
-            <img class="img02" src="./cuzinho.png" alt="Imagem de um animal selvagem">
-            <p>Tentar fazer amizade com o estranho animal selvagem ou 
-                Tentar espantar o animal selvagem
-            </p>
-            <button class="cuzinho.png" data-proximo="1">Tentar fazer amizade com os estranhos animais selvagens</button>
-            <button class="cuzinho.png" data-proximo="2">Espantar o animal selvagem</button>
-        </div>
+        <!-- PRIMEIRA IMAGEM (aparece ao abrir a página) -->
+        <img id="img-inicial" src="./julia burra da porra.webp" class="img01">
+
+        <!-- PERGUNTA + BOTÕES -->
+        <p id="pergunta">
+            Você acaba de se mudar para Elmore e recebe um convite inesperado!  
+            Para onde você deseja ir?
+        </p>
+
+        <button class="escolha">Rota do Parque</button>
+        <button class="escolha">Rota da Escola</button>
+
+        <!-- SEGUNDA IMAGEM (começa escondida) -->
+        <img id="img-segunda" src="./cuzinho.png" class="img02" style="display:none;">
+
     </main>
+
     <script src="main.js"></script>
 </body>
 

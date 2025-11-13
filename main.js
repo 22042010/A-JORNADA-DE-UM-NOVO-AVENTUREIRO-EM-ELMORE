@@ -1,13 +1,9 @@
-const avanca= document.querySelectorAll('.btn-proximo')
-console.log(avanca)
+const escolhas = document.querySelectorAll('.escolha');
 
-avanca.forEach(button=>{
-    button.addEventListener('click',function(){
-    const atual  = document.querySelector('.ativo')
-    const proximoPasso = 'passo-' +this.getAttribute('data-proximo')
-        console.log(proximoPasso)
-atual.classList.remove('ativo')
-document.getElementById(proximoPasso).classList.add('ativo')
-    })
-
-})
+escolhas.forEach(botao => {
+    botao.addEventListener('click', function() {
+        document.getElementById('img-inicial').style.display = 'none';
+        document.getElementById('pergunta').style.display = 'none';
+        document.getElementById('img-segunda').style.display = 'block';
+    });
+});
